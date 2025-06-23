@@ -13,6 +13,7 @@ import os
 os.environ["LANGSMITH_API_KEY"] = st.secrets["LANGSMITH_API_KEY"]
 os.environ["LANGSMITH_PROJECT"] = "Simple Q&A Chatbot with Ollama"
 os.environ['LANGSMITH_TRACKING']="true"
+os.environ['GROQ_API_KEY']=st.secrets['GROQ_API_KEY']
 
 
 #Prompt Template
