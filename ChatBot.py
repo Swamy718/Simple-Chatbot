@@ -4,12 +4,6 @@ from langchain_core.output_parsers import StrOutputParser
 import streamlit as st
 import os
 
-# from dotenv import load_dotenv
-# load_dotenv()
-
-
-#Langsmith Tracing
-# os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
 os.environ["LANGSMITH_API_KEY"] = st.secrets["LANGSMITH_API_KEY"]
 os.environ["LANGSMITH_PROJECT"] = "Simple Q&A Chatbot with Ollama"
 os.environ['LANGSMITH_TRACKING']="true"
